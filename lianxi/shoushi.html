@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="js/jgestures.min.js"></script>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+     #diva{
+     	width:100%;
+     	height:200px;
+     	background:red;
+     }
+	</style>
+</head>
+<body>
+	<div id="diva">滑动</div>
+
+	<script>
+	$(function () {
+		$('#diva').bind('pinch',function () {  //两手指缩放手势
+			alert(1234);
+		});
+		
+		// rotate 两手指旋转手势
+		// 是swipemove 手指在设备上滑动
+		// 等等
+	})
+		
+	</script>
+</body>
+</html>
